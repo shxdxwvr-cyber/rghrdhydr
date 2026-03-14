@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/png" sizes="16x16" href="https://share.sketchpad.app/22/634-e925-da0165.png">
+    <style>
+      /* Styling for the body */
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: open sans, sans-serif;
+}
+
+/* Styling for the grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: #768fd1;
+  padding: 10px;
+}
+
+/* Styling for the all of the div elements that are the children of the grid container */
+.grid-container > div {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+/* Styling for the first value in the grid */
+.item1 {
+  grid-column-start: 1; /* The grid begins at the start value. */
+  grid-column-end: 3;  /* The grid ends at one less than end value. */
+}
+
+/* Styling for h1 */
+h1 {
+  text-align: center;
+}
+    </style>
+    <script>
+        function play(){
+         var audio = new Audio('modem.mp3');
+        audio.play();   
+        }
+      </script>
+    <meta charset="utf-8">
+    <title>Call</title>
+  </head>
+  <body>
+      <h1>Call</h1>
+    <div class="grid-container">
+        <div class="item1"><button>1</button></div>
+        <div class="item2"><button>2</button></div>
+        <div class="item3"><button>3</button></div>  
+        <div class="item4"><button>4</button></div>
+        <div class="item5"><button>5</button></div>
+        <div class="item6"><button>6</button></div>
+        <div class="item7"><button>7</button></div>
+        <div class="item8"><button>8</button></div>  
+    </div>
+    <center>
+      <input type="button" value="0">
+      </center>
+    <button onclick="play()"><img src="https://share.sketchpad.app/22/2a6-26f4-f3f87c.png" style="width: 300px; height: 300px;"></button>
+  </body>
+</html>
